@@ -108,3 +108,15 @@ $ file ./.plasmo/gen-assets/*
 ./.plasmo/gen-assets/icon48.plasmo.png:  PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced
 ./.plasmo/gen-assets/icon64.plasmo.png:  PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced
 ```
+
+In order to publish the extention to the [Chrome Web Store](https://chromewebstore.google.com/?hl=fr), you'll need to generate a `.zip` file
+
+```
+$ pnpm build -- --zip
+$ ls -lrct build/
+total 128
+drwxr-xr-x  11 olivierbourdon  staff    352 Mar 11 14:48 chrome-mv3-dev
+drwxr-xr-x  10 olivierbourdon  staff    320 Mar 11 15:29 chrome-mv3-prod
+-rw-r--r--   1 olivierbourdon  staff  63284 Mar 11 15:29 chrome-mv3-prod.zip
+```
+
