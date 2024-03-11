@@ -1,4 +1,5 @@
 # browser-extension-plasmo-tutorial
+
 Step by step tutorial(s) for Plasmo web browsers extension framework
 
 Following the first video [Create a Google Chrome extension with ReactJS | Plasmo quickstart tutorial](https://www.youtube.com/watch?v=Fa2nFDw-dBw) (June 19th 2022 18mn)
@@ -43,3 +44,10 @@ The new extension icon is now visible within the list of pinned extensions in th
 and once clicked the extension code is executed and appears:
 
 ![Chrome Extension Activate](./pictures/ChromeExtActivate.png)
+
+Here the default generated code creates a popup and its code resides in the `popup.tsx` file but you can also use other browser API(s) to create new tabs, options UI, ...
+
+Changing the text of the message in the code and having the dev server running in the background should automatically take new changes into account without having to do anything. If this is not the case, the reload button in the extention basic info pane can be used.
+
+![Chrome Extension Activate](./pictures/ChromeExtReload.png)
+
